@@ -1,0 +1,65 @@
+.photo-grid{
+      display:grid;
+      gap: 1rem;
+      /* sets default minimum height */
+      grid-auto-rows: 240px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.card-tall{
+      /* any item with this class should span across multiple rows (in this case, 2) vertically . 
+      the auto is the ending point, which is figured out automatically by the grid*/
+      grid-row: span 2 / auto;
+}
+
+.card-wide{
+      /* same idea as grid row, except for width */
+      grid-column: span 2 /auto;
+}
+
+#card-1{
+      background-image: url('./images/band-car.jpg');
+}
+#card-2{
+      background-image: url('./images/band-gas-station-1.jpg');
+}
+#card-3{
+      background-image: url('./images/band-porch.jpg');
+}
+#card-4{
+      background-image: url('./images/michael-trailer.jpg');
+}
+#card-5{
+      background-image: url('./images/chad-trailer.jpg');
+}
+#card-6{
+      background-image: url('./images/chris-kitchen.jpg');
+}
+#card-7{
+      background-image: url('./images/greg-trailer.jpg');
+}
+#card-8{
+      background-image: url('./images/band-with-star.jpg');
+}
+#card-9{
+      background-image: url('./images/band-salton-walk.jpg');
+}
+#card-10{
+      background-image: url('./images/band-with-iron.jpg');
+}
+#card-11{
+      background-image: url('./images/band-gas-station-2.jpg');
+}
+#card-12{
+      background-image: url('./images/moody-fog.jpg');
+}
+
+@media screen and (min-width:600px) {
+      .card-tall {
+            grid-row: span 2 / auto;
+      }
+
+      .card-wide {
+            grid-column: span 2 / auto;
+      }
+}
